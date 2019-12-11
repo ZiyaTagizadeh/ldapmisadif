@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Shakir">
+    <link rel="icon" th:href="@{/img/adif.ico}">
+    <title>Adif Admin Panel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/bootstrap.min.css}" type="text/css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{/css/signin.css}" type="text/css" rel="stylesheet">
+</head>
+<body class="text-center">
+<form class="form-signin" name="login" th:action="@{/login}" method="post" autocomplete="off">
+    <img class="mb-4" th:src="@{/img/logo.svg}" alt="" width="200" height="150">
+    <h1 class="h3 mb-3 font-weight-normal">Giriş</h1>
+    <td th:text="${param.error != null } ? 'Invalid username or password' : ''" />
+    <label for="inputUsername" class="sr-only">İstifadəçi adı</label>
+    <input type="text" id="inputUsername" class="form-control" placeholder="İstifadəçi adı"  name="username" required autocomplete="off">
+
+    <label for="inputPassword" class="sr-only">Şifrə</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Şifrə" name="password" required autocomplete="off">
+
+    <br/>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Daxil ol</button>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+
+</form>
+</body>
+</html>

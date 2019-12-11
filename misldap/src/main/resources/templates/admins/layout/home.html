@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title layout:title-pattern="$CONTENT_TITLE | $LAYOUT_TITLE">Admin Panel</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/all.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+</head>
+<body>
+
+<!--Header baslangici-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navigation_h">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Admin Panel</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Xoş Gəldiniz
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Profil</a>
+                    <a class="dropdown-item" href="#">Çıxış</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<!--Header sonu-->
+
+<!--Content baslangici-->
+
+    <div th:replace="left :: left_navbar">
+
+    </div>
+
+
+<!--<div class="col-md-12 admin_pull">
+    <div class="col-md-3 fa-pull-left left_sidebar">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column l_navigation menu_js">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+
+                        Ana Səhifə
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+
+                        Menyular
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+
+                        Adminlər
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+
+                        İstifadəçilər
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+
+                        Integrations
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="col-md-9 fa-pull-right">
+
+
+        <div class="starter-template">
+            <h1>Bootstrap starter template</h1>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        </div>
+
+        &lt;!&ndash;Content son&ndash;&gt;
+
+        &lt;!&ndash;Footer baslangici&ndash;&gt;
+    </div>
+
+
+</div>
+<div class="clearfix"></div>
+
+<center>-->
+
+
+
+
+    <div class="card">
+        <div class="card-header">
+            Footer
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Bütün hüquqlar qorunur.</p>
+                <footer class="blockquote-footer">Shakir <cite title="Source Title">Azimli</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+</center>
+<script type="text/javascript">
+
+</script>
+
+<script  th:src="@{/js/jquery-3.3.1.js}"></script>
+<script  th:src="@{/js/bootstrap.js}"></script>
+<script  th:src="@{/js/all.js}"></script>
+<script  th:src="@{/js/main.js}"></script>
+</body>
+</html>
+<!--Footer son-->
