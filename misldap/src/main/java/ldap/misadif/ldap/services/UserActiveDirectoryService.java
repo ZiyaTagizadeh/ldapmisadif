@@ -24,7 +24,7 @@ public class UserActiveDirectoryService implements IUserService {
     @Override
     public ActiveDirectoryUser findByLogin(String login) {
         SearchControls searchCtls = new SearchControls();
-        String returnedAtts[] = {"sAMAccountName", "userPrincipalName", "employeeId", "displayName", "mail","userAccountControl","memberOf"};
+        String returnedAtts[] = {"sAMAccountName", "userPrincipalName", "employeeId", "displayName", "mail","userAccountControl","memberOf",};
 
 
 
@@ -109,6 +109,7 @@ public class UserActiveDirectoryService implements IUserService {
         catch (NamingException e){
             return false;
         }
+
     }
 }
 
