@@ -14,6 +14,7 @@ import java.util.Objects;
 @RequestMapping("/ldap")
 public class ActiveDirectoryUserController {
     @Autowired
+
     @Qualifier("userActiveDirectoryService")
     private IUserService userService;
 
@@ -30,8 +31,7 @@ public class ActiveDirectoryUserController {
         System.out.println("Password="+passw);
         boolean isAuthenticated=false;
        ActiveDirectoryUser activeDirectoryUser = userService.findByLogin(login);
-        System.out.println("-------------------");
-        System.out.println("activeDirectoryUser"+activeDirectoryUser.getLdapLogin());
+
        if (Objects.nonNull(activeDirectoryUser)){
            //passwordu bura yaz ldap username pass deyirsen? beli
            ///sahir.azimli nin password un ok
