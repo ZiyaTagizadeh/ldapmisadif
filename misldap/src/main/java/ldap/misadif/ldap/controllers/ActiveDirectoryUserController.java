@@ -26,9 +26,7 @@ public class ActiveDirectoryUserController {
     @GetMapping("/login_control/{login}/{passw}")
     public String testLogin(@PathVariable String login, @PathVariable String passw){
         //email i bura yaz
-        System.out.println("---------------");
-        System.out.println("login=="+login);
-        System.out.println("Password="+passw);
+
         boolean isAuthenticated=false;
        ActiveDirectoryUser activeDirectoryUser = userService.findByLogin(login);
 
